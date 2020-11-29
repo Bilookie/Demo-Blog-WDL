@@ -21,7 +21,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx", "pages/components/pages/music/SongModule.tsx", "pages/components/Songpage.tjs", "pages/components/pages/music/songs/[id].js", "pages/components/pages/music/Song.js"
   ],
   "exclude": [
     "node_modules"

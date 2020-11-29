@@ -1,0 +1,44 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Song {
+  id       Int     @default(autoincrement()) @id
+  name     String
+  youtubeId String?
+  artist   Artist? @relation(fields: [artistId], references: [id])
+  artistId Int?
+}
+
+model Artist {
+  id    Int    @default(autoincrement()) @id
+  name  String @unique
+  songs Song[]
+}
+// generator client {
+//   provider = "prisma-client-js"
+// }
+
+// datasource db {
+//   provider = "sqlite"
+//   url      = "file:dev.db"
+// }
+
+// model Artist {
+//   id   Int    @id @default(autoincrement())
+//   name String @unique
+//   Song Song[]
+// }
+
+// model Song {
+//   artistId  Int?
+//   id        Int     @id @default(autoincrement())
+//   name      String
+//   youtubeId String?
+//   Artist    Artist? @relation(fields: [artistId], references: [id])
+// }

@@ -15,7 +15,7 @@ export default function Page() {
 
   return(
     <>
-      <p>Redirecting...</p>
+      <p>Redirecting..</p>
     </>
   );
 }

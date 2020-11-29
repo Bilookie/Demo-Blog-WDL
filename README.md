@@ -11,6 +11,7 @@
 ![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Code-CSS3-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Shell-Zsh-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=5a4fcf)
+![](https://img.shields.io/badge/database-MySQL-green)
 
 
 ## Project Setup
@@ -22,6 +23,17 @@ $ npm i typescript @types/node @types/react --save-dev
 $ npm run dev
 ```
 
+Setup for `prisma`
+
+```
+$ npx prisma
+$ npx prisma init 
+$ npx prisma introspect  <- Gives the data model
+$ npm install @prisma/client
+$ npx prisma generate
+$ npx @prisma/codemods update-2.12 ./
+$ npx prisma migrate save --experimental && npx prisma migrate up --experimental
+```
 ## Results
 
 To see the deployed, click on the `prototype` button below

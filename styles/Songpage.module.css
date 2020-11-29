@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh;
+  width: 100%; */
+  /* padding: 20px; */
+}
+.bg {
+  background-image: url("../public/images/sketchBG.png");
+  background-color: #cccccc;
+  background-position: center;
+  background-attachment: fixed;
+  object-fit: fill;
+  /* border: 2px red solid; */
+  /* text-align: center;
+    flex-direction: column;
+    display: flex; */
+}
+/* .image {
+    background-image: ;
+    flex: 10;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -3;
+    border: black solid 1px;
+  } */

@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import styles from '../../styles/Navbar.module.css'
+import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
+import styles from "../../styles/Navbar.module.css";
 
 function Navbar() {
-  
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
@@ -26,7 +25,7 @@ function Navbar() {
     <>
       <nav className={styles.navbar}>
         <div className={styles.navbarContainer}>
-          <a href='/' className={styles.navbarLogo} onClick={closeMobileMenu}>
+          <a href="/" className={styles.navbarLogo} onClick={closeMobileMenu}>
             WDL
           </a>
           <div className={styles.menuIcon} onClick={handleClick}>
@@ -34,22 +33,33 @@ function Navbar() {
           </div>
           <ul className={styles.navMenu}>
             <li className={styles.navItem}>
-              <a href='/' className={styles.navLinks} onClick={closeMobileMenu}>
+              <a href="/" className={styles.navLinks} onClick={closeMobileMenu}>
                 Home
               </a>
             </li>
             <li className={styles.navItem}>
               <a
-                href='/components/pages/Stories'
+                href="/components/pages/Stories"
                 className={styles.navLinks}
                 onClick={closeMobileMenu}
               >
                 Stories
               </a>
             </li>
-            <li className='nav-item'>
+
+            <li className="nav-item">
               <a
-                href='/components/pages/posts/post1'
+                href="/components/pages/music/Song"
+                className={styles.navLinks}
+                onClick={closeMobileMenu}
+              >
+                Songs
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a
+                href="/components/pages/posts/post1"
                 className={styles.navLinks}
                 onClick={closeMobileMenu}
               >
@@ -59,7 +69,7 @@ function Navbar() {
 
             <li>
               <a
-                href='/components/pages/SignUp'
+                href="/components/pages/SignUp"
                 className={styles.navLinksMobile}
                 onClick={closeMobileMenu}
               >
