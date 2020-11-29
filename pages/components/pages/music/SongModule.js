@@ -20,7 +20,7 @@ export async function getStaticProps() {
     props: songs,
   };
 }
-export default //not importing songs ??HERE-IS-THE-ERROR
+// export default //not importing songs ??HERE-IS-THE-ERROR
 // return {
 //   props: {
 //     songs,
